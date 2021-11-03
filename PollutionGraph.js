@@ -21,8 +21,10 @@ function drawBasic() {
         vAxis: {
           title: 'Tons'
         },
-        width: 9000,
-        height: 5000,
+        explorer: {
+            keepInBounds: true,
+            actions: ['dragToZoom', 'rightClickToReset']
+        }      
       };
 
       var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
