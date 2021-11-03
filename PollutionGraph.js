@@ -1,4 +1,9 @@
-google.charts.load('current', {packages: ['corechart', 'line']});
+<html>
+<head>
+  <script type="text/javascript" 
+  src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {packages: ['corechart', 'line']});
 google.charts.setOnLoadCallback(drawBasic);
 
 function drawBasic() {
@@ -24,6 +29,9 @@ function drawBasic() {
         explorer: {
             keepInBounds: true,
             actions: ['dragToZoom', 'rightClickToReset']
+        },
+        legend: {
+            position: bottom,
         }      
       };
 
@@ -31,3 +39,14 @@ function drawBasic() {
 
       chart.draw(data, options);
     }
+  </script>
+</head>
+<body>
+<div id="chart_div" class="main"></div>
+</body>
+<style>
+  .main {
+    
+  }
+</style>
+</html>
