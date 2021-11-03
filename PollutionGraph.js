@@ -23,10 +23,6 @@ function drawBasic() {
         },
         width: 900,
         height: 500,
-        gridlines: {
-        	minSpacing: 1,
-        	interval: [1],
-        }
       };
 
       var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
